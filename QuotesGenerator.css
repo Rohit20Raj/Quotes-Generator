@@ -52,7 +52,7 @@ body{
     margin: 0 auto;
 }
 
-#newQuote:hover{
+#newQuote:active{
     background-color: blue;
     color: rgb(21, 20, 20);
     box-shadow: 0 0 10px;
