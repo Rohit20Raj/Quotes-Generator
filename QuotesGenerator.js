@@ -18,6 +18,13 @@ var quotes = [
         "― Kautilya"]
 ];
 
+if (screen.width < screen.height) {
+    document.body.style.backgroundImage = 'url("https://wallpaperaccess.com/full/1200732.jpg")';
+}
+else {
+    document.body.style.backgroundImage = 'url("https://thumbs.dreamstime.com/b/library-background-white-bookshelves-books-textbooks-learning-education-concept-d-illustration-146004771.jpg")';
+}
+
 function generateQuote() {
     quote = Math.floor(Math.random() * quotes.length);
     document.querySelector("#quote").innerText = '"' + quotes[quote][0] + '"';
