@@ -1,5 +1,5 @@
 body{
-    background-image: url("https://thumbs.dreamstime.com/b/library-background-white-bookshelves-books-textbooks-learning-education-concept-d-illustration-146004771.jpg");
+    /* background-image: url("https://thumbs.dreamstime.com/b/library-background-white-bookshelves-books-textbooks-learning-education-concept-d-illustration-146004771.jpg"); */
     /* background-repeat:space; */
     background-size: cover;
 }
@@ -52,7 +52,7 @@ body{
     color: white;
     height: 40px;
     margin: 0 auto;
-    transition: 0s 0.5s;
+    transition: 0s 0.10s;
 }
 
 #newQuote:active{
