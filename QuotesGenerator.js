@@ -1,15 +1,15 @@
 var quotes = [
     ["A person should not be too honest. Straight trees are cut first and honest people are screwed first.",
-        "― Chanakya"]
+        "― Chanakya"],
     ["The greatest glory in living lies not in never falling, but in rising every time we fall.", "-Nelson Mandela"],
     ["As soon as the fear approaches near, attack and destroy it.",
-        "― Chanakya"]
+        "― Chanakya"],
     ["The way to get started is to quit talking and begin doing.", "-Walt Disney"],
     ["Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking.", "-Steve Jobs"],
     ["If life were predictable it would cease to be life, and be without flavor.", "-Eleanor Roosevelt"],
     ["If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.", "-Oprah Winfrey"],
     ["Education is the best friend. An educated person is respected everywhere. Education beats the beauty and the youth.",
-        "― Kautilya"]
+        "― Kautilya"],
     ["If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.", "-James Cameron"],
     ["Life is what happens when you're busy making other plans.", "-John Lennon"],
     ["Be so busy improving your self that you have no time to criticize others.", "– Chetan Bhagat"],
@@ -26,7 +26,15 @@ else {
 }
 
 function generateQuote() {
-    quote = Math.floor(Math.random() * quotes.length);
+    let anotherQuote = Math.floor(Math.random() * quotes.length);
+    if(quote == anotherQuote){
+        return generateQuote;
+    }
+    else{
+        quote = anotherQuote;
+    }
+    // quote = Math.floor(Math.random() * quotes.length);
+    console.log(quote);
     document.querySelector("#quote").innerText = '"' + quotes[quote][0] + '"';
     document.querySelector("#person").innerText = quotes[quote][1].toUpperCase();
 
@@ -39,6 +47,7 @@ function generateQuote() {
 }
 
 var quote = Math.floor(Math.random() * quotes.length);
+console.log(quote);
 
 document.querySelector("#quote").innerText = '"' + quotes[quote][0] + '"';
 document.querySelector("#person").innerText = quotes[quote][1].toUpperCase();
