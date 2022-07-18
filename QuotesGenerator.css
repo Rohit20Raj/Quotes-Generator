@@ -41,6 +41,7 @@ body{
 #person{
     font-family: 'Roboto Mono', monospace;
     color: darkgreen;
+    font-weight: bolder;
 }
 
 #newQuote{
