@@ -13,6 +13,7 @@ body{
 }
 .title{
     background-color: black;
+    border: 2px solid white;
     border-radius: 10px;
     color: white;
     padding: 5px 15px;
@@ -29,6 +30,7 @@ body{
     width: 300px;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    box-shadow: 0 0 20px rgb(242, 255, 0);
 }
 
 #quote{
@@ -48,4 +50,10 @@ body{
     color: white;
     height: 40px;
     margin: 0 auto;
+}
+
+#newQuote:hover{
+    background-color: blue;
+    color: rgb(21, 20, 20);
+    box-shadow: 0 0 10px;
 }
