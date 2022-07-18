@@ -1,0 +1,51 @@
+body{
+    background-image: url("https://thumbs.dreamstime.com/b/library-background-white-bookshelves-books-textbooks-learning-education-concept-d-illustration-146004771.jpg");
+    /* background-repeat:space; */
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 500px;
+    place-items: center;
+}
+.title{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-content{
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+#quote{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: larger;
+}
+
+#person{
+    font-family: 'Roboto Mono', monospace;
+    color: darkgreen;
+}
+
+#newQuote{
+    /* width: 100px; */
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    margin: 0 auto;
+}
