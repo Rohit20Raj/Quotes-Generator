@@ -47,13 +47,15 @@ body{
     /* width: 100px; */
     background-color: black;
     border-radius: 5px;
+    box-shadow: 0 0 20px;
     color: white;
     height: 40px;
     margin: 0 auto;
+    transition: 0s 0.5s;
 }
 
 #newQuote:active{
     background-color: blue;
-    color: rgb(21, 20, 20);
-    box-shadow: 0 0 10px;
+    /* color: rgb(21, 20, 20); */
+    transition: 0s;
 }
